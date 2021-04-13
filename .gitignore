@@ -1,0 +1,7 @@
+# Project exclude paths
+/order_app/target/
+/payment-grpc-client/target/
+/payment-grpc-server/target/
+/payment-load-balance/target/
+/payment-rest-server/target/
+/proto/target/

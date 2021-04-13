@@ -1,0 +1,14 @@
+payment-service:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: localhost:8081,localhost:8082
+    ServerListRefreshInterval: 2000
+
+spring:
+  output:
+    ansi:
+      enabled: always
+
+server:
+  port: 7000

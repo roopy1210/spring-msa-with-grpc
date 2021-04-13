@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="payment-rest-server" />
+        <module name="payment-load-balance" />
+        <module name="order_app" />
+        <module name="payment-grpc-client" />
+        <module name="payment-grpc-server" />
+        <module name="proto" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="order" target="8" />
+      <module name="order-service" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="order" options="-parameters" />
+      <module name="order-service" options="-parameters" />
+      <module name="order_app" options="-parameters" />
+      <module name="payment-grpc-client" options="-parameters" />
+      <module name="payment-grpc-server" options="-parameters" />
+      <module name="payment-load-balance" options="-parameters" />
+      <module name="payment-rest-server" options="-parameters" />
+      <module name="proto" options="-parameters" />
+    </option>
+  </component>
+</project>
