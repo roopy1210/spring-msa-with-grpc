@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package payment;
+
+option java_multiple_files = true;
+option java_package = "com.roopy.payment.approval";
+
+message ApprovalRequest {
+  string payment_no = 1;
+  int32 amt = 2;
+}
+
+message ApprovalResponse {
+  string aproval_no = 1;
+  int32 amt = 2;
+}
+
+service ApprovalService {
+  // 결제승인
+  rpc approvalPayment(stream ApprovalRequest) returns (stream ApprovalResponse) {};
+}
